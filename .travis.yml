@@ -12,4 +12,4 @@ install:
   - pip install -r requirements.env.txt
 
 script:
-  - pytest --cov
+  - pytest --cov -r w 

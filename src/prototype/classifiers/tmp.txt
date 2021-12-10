@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /Users/alexandrelamarre/Desktop/repos/ai/insectopedia-prototype/src/prototype/classifiers
+plugins: cov-3.0.0
+collected 4 items
+
+test_main.py .                                                           [ 25%]
+test_setup_api.py ...                                                    [100%]
+
+---------- coverage: platform darwin, python 3.9.6-final-0 -----------
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+main.py                 4      0   100%
+setup_api.py           40      0   100%
+test_main.py            3      0   100%
+test_setup_api.py      62      0   100%
+-------------------------------------------------
+TOTAL                 109      0   100%
+
+
+============================== 4 passed in 3.41s ===============================

@@ -12,4 +12,5 @@ install:
   - pip install -r requirements.env.txt
 
 script:
-  - pytest --cov
+  - pytest --cov -r w >> tmp.txt
+  - curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST -H "Content-Type:text/plain" -d @tmp.txt "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
